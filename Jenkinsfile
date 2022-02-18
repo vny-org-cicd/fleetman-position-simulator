@@ -16,6 +16,9 @@ pipeline {
    stages {
       
       stage('Build') {
+         tools {
+              maven 'maven'
+          }
          
          steps {
             
